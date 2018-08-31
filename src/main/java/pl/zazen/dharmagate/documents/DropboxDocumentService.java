@@ -11,12 +11,11 @@ public class DropboxDocumentService implements DocumentService {
 
     @Autowired
     public DropboxDocumentService(DbxClientV2 dropboxClient) {
-    this.dropboxClient =  dropboxClient;
+        this.dropboxClient = dropboxClient;
     }
 
     @Override
     public Document getById(String id) {
-       return null;
+        return null;
     }
-
 }

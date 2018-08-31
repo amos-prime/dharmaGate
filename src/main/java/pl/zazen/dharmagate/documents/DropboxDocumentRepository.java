@@ -6,6 +6,4 @@ public class DropboxDocumentRepository implements DocumentRepository {
     public Document getById(String id) {
         return null;
     }
-
-
 }
