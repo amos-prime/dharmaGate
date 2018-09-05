@@ -1,7 +1,8 @@
 package pl.zazen.dharmagate.documents;
 
+import pl.zazen.dharmagate.documents.Document.Document;
+
 public interface DocumentService {
 
-    Document getById(String id);
-
+    Document getByHash(String hash);
 }

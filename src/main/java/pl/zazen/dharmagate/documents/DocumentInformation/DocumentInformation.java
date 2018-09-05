@@ -1,4 +1,4 @@
-package pl.zazen.dharmagate.documents;
+package pl.zazen.dharmagate.documents.DocumentInformation;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -18,4 +18,10 @@ public class DocumentInformation {
     private String path;
     private String name;
     private String tags;
+
+    private final String PATH_SEPARATOR = "/";
+
+    public String getPathWithName () {
+        return path + PATH_SEPARATOR + name;
+    }
 }

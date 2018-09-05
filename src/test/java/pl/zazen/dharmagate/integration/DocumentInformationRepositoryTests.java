@@ -1,17 +1,12 @@
 package pl.zazen.dharmagate.integration;
 
-import com.dropbox.core.DbxException;
-import com.dropbox.core.v2.DbxClientV2;
-import com.dropbox.core.v2.files.ListFolderResult;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import pl.zazen.dharmagate.documents.DocumentInformation;
-import pl.zazen.dharmagate.documents.DocumentInformationRepository;
-
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import pl.zazen.dharmagate.documents.DocumentInformation.DocumentInformation;
+import pl.zazen.dharmagate.documents.DocumentInformation.DocumentInformationRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -41,7 +36,6 @@ public class DocumentInformationRepositoryTests {
 
         //then
         System.out.println(savedDocumentInformation);
-
     }
 }
 

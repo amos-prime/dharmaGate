@@ -1,4 +1,4 @@
-package pl.zazen.dharmagate.documents;
+package pl.zazen.dharmagate.documents.DocumentInformation;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
