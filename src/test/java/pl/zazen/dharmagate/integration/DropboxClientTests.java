@@ -20,7 +20,14 @@ public class DropboxClientTests {
 
     @Test
     public void dbxClientBean_ShouldBeInstantiated() {
-        assertThat(dbxClient).isNotNull();
+        try{
+            assertThat(dbxClient.users().getCurrentAccount().getCountry()).isEqualTo("PL");
+        }catch (DbxException e){
+            e.getMessage();
+        }
+
+        //assertThat(dbxClient).isNotNull();
+
     }
 
     @Test
