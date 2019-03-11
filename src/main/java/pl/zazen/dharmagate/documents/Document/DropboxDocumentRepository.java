@@ -4,17 +4,15 @@ import com.dropbox.core.DbxDownloader;
 import com.dropbox.core.DbxException;
 import com.dropbox.core.v2.DbxClientV2;
 import com.dropbox.core.v2.files.FileMetadata;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 import org.thymeleaf.util.Validate;
 
 @Repository
+@AllArgsConstructor
 public class DropboxDocumentRepository implements DocumentRepository {
 
     private DbxClientV2 dropboxClient;
-
-    public DropboxDocumentRepository(DbxClientV2 dropboxClient) {
-        this.dropboxClient = dropboxClient;
-    }
 
     @Override
     public Document getByPath(String path) {

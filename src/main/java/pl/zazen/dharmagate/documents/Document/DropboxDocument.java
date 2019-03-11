@@ -1,20 +1,14 @@
 package pl.zazen.dharmagate.documents.Document;
 
-import lombok.NoArgsConstructor;
-
+import lombok.AllArgsConstructor;
 import java.io.InputStream;
 
-@NoArgsConstructor
+@AllArgsConstructor
 public class DropboxDocument implements Document {
 
     private InputStream inputStream;
 
-    //private DropboxDocument() {}
-
     public static DropboxDocument fromInputStream(InputStream inputStream) {
-        DropboxDocument dropboxDocument = new DropboxDocument();
-        dropboxDocument.inputStream = inputStream;
-        return dropboxDocument;
+        return new DropboxDocument(inputStream);
     }
-
 }
